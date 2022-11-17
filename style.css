@@ -15,7 +15,7 @@
     
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #f8333c;
+    --clr-accent: #0047AB;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -253,6 +253,7 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
+    
 }
 
 .section__subtitle--intro {
@@ -295,7 +296,7 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../img/services-bg.jpg);
+    background-image: url(IntroImg.jpg);
     background-size: cover;
     /* background-blend-mode: multiply; */
     color: var(--clr-light);
@@ -403,7 +404,9 @@ header {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+        min-height: 100%;
 }
+
 
 .portfolio__item:focus {
     position: relative;
@@ -414,6 +417,11 @@ header {
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .5;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
 }
 
 
